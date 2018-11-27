@@ -46,7 +46,21 @@ Git
 
     git commit -m "<description>"
         commits all staging files to the commit local area
+    
+    git commit -am "<description>"
+        adds all modified files to the staging area and commits
         
     git push origin master
         origin is the remote name (github)
         master is the current branch
+        push any commit from the local repository to the remote repository
+
+    git pull orign master
+        sync your branch (master in this case) with the origin downloading all files
+    
+    
+    untracked files --> all files that git is aware of tracking activly
+    git ls-files
+        shows all git tracked files into the current repository
+    
+    
