@@ -1,0 +1,52 @@
+Source control Options
+    Centralized (Centralized server, require a network connection)
+    Decentralized/Distributed (most operation are local, central server not required)
+
+Git
+    Decentralized/Distributed
+    Scales
+    Open source
+    Comparison and commit could be without a network connection
+    Repositories contains:
+        Files
+        History
+        Configurations
+        In general contains all files related tu your project
+
+    Three states of a local repository
+        Working directory       --> Holds all the project files
+        Staging area            --> Git index. Holding area for all files related to a future commit. Disegned for isolated commits
+        Commit area             --> Manage all commits ad history. Commits finalized files permanently into a repository
+        
+    Forth state
+        Remtoe repository
+
+    Branches as a timeline containing your changes
+        The default branch is master
+
+    Git commands for init a workspace
+        git config --global usern.name "Francesco"
+        git config --global usern.email "prova@prova.it"
+        git config --global --list --> elenca tutte le proprietà globali
+        git config --global core.editor "<comando per aprire l'editor>" --> imposta l'editor di default
+        git config --global -e --> opens the editor to edit all global configurations
+        
+    To clone a repository
+        git clone <url>
+        creates a relationship between a local repository ad git hub (origin)
+
+    git status
+        check the repository state
+        tell us witch branch is active
+        untracked file --> file that hasn't been added to git staging area
+        display changes to be committed
+
+    git add
+        add a file/files to the staging area
+
+    git commit -m "<description>"
+        commits all staging files to the commit local area
+        
+    git push origin master
+        origin is the remote name (github)
+        master is the current branch
