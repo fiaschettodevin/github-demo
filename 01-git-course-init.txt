@@ -25,8 +25,8 @@ Git
         The default branch is master
 
     Git commands for init a workspace
-        git config --global usern.name "Francesco"
-        git config --global usern.email "prova@prova.it"
+        git config --global user.name "Francesco"
+        git config --global user.email "prova@prova.it"
         git config --global --list --> elenca tutte le proprietà globali
         git config --global core.editor "<comando per aprire l'editor>" --> imposta l'editor di default
         git config --global -e --> opens the editor to edit all global configurations
